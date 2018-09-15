@@ -1,0 +1,52 @@
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+h1{
+  font-size: 2em;
+}
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 500px;
+}
+
+.formulario input{
+  margin: 20px;
+  width: 400px;
+  outline: none;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  font-size: 1em;
+  color: white
+}
+.formulario button{
+  width: 200px;
+  height: 30px;
+  border-radius: 20px;
+  font-size: 1em;
+  margin-left: 20px;
+  background-color: blueviolet;
+  color: white;
+}
+
+.info{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+ul{
+  list-style: none;
+}

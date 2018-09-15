@@ -1,0 +1,25 @@
+<section>
+  <article class="formulario">
+    <h1>Calcula tu IMC</h1>
+    <input placeholder="Nombre" [(ngModel)]="persona.nombre" type="text">
+    <input placeholder="Edad" [(ngModel)]="persona.edad" type="text">
+    <input placeholder="Sexo 'h' o 'm'" [(ngModel)]="persona.sexo" type="text">
+    <input placeholder="Peso en kg" [(ngModel)]="persona.peso" type="text">
+    <input placeholder="Altura en m" [(ngModel)]="persona.altura" type="text">
+    <button (click)="toString()">Calcular</button>
+  </article>
+  <article class="info">
+    <div *ngFor="let personas of resultados">
+      <h2>Nombre: {{personas.nombre}}</h2>
+      <ul>
+        <li>Edad: {{personas.edad}} - {{personas.mayor}}</li>
+        <li>NSS: {{personas.nss}}</li>
+        <li>Sexo: {{personas.sexo}} </li>
+        <li>Peso: {{personas.peso}}kg</li>
+        <li>Altura: {{personas.altura}}</li>
+        <li>IMC: {{personas.imc}}</li>
+        <li>Estado: {{personas.interpretacionIMC}}</li>
+      </ul>
+    </div>
+  </article>
+</section>
